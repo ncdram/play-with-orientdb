@@ -1,4 +1,4 @@
-name := "Play with OrientDB"
+name := "Play-with-OrientDB"
 
 version := "1.0-SNAPSHOT"
 

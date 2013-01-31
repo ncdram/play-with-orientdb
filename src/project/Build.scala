@@ -4,7 +4,7 @@ import PlayProject._
 
 object ApplicationBuild extends Build {
 
-    val appName         = "Play with OrientDB"
+    val appName         = "Play-with-OrientDB"
     val appVersion      = "1.0-SNAPSHOT"
 
     // IMPORTANT. The plugin can't be compiled without this
@@ -23,6 +23,8 @@ object ApplicationBuild extends Build {
     val main = play.Project(appName, appVersion, appDependencies).settings(
       // Add your own project settings here   
 
+	  // Disabling javadoc per https://play.lighthouseapp.com/projects/82401/tickets/710-publish-local-is-broken
+	  publishArtifact in(Compile, packageDoc) := false
     )
 
 }
